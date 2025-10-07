@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates id="template" xml:space="preserve">
     <t t-name="OrderReceiptNoTax" t-inherit="point_of_sale.OrderReceipt" t-inherit-mode="extension" owl="1">
-        <xpath expr="//t[@t-if='isTaxIncluded']" position="replace"/>
+        <xpath expr="//t[@t-if='isTaxIncluded']" position="replace">
+            <div style="color:red;">TAX SECTION REMOVED (dummy element for testing)</div>
+        </xpath>
     </t>
 </templates>
