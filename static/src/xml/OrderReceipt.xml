@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates id="template" xml:space="preserve">
     <t t-name="OrderReceiptNoTax" t-inherit="point_of_sale.OrderReceipt" t-inherit-mode="extension" owl="1">
-        <xpath expr="//t[@t-if='isTaxIncluded']" position="replace">
-            <div style="color:red;">TAX SECTION REMOVED (dummy element for testing)</div>
-        </xpath>
-    </t>
+<!-- text() match directly the text of the div only not include children elements but . match all with children so remove all if it contains...   -->
+<xpath expr="//div[contains(text(), 'Total Taxes')]" position="replace">  </xpath>
+</t>
+
+
+
 </templates>
