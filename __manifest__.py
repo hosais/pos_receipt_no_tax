@@ -11,7 +11,7 @@
     ],
     "assets": {
         "web.assets_qweb": [
-            "pos_receipt_no_tax_js/static/src/xml/OrderReceipt.xml",
+            "pos_receipt_no_tax/static/src/xml/OrderReceipt.xml",
             'pos_receipt_no_tax/static/src/xml/ba_dcp_history_button.xml',
         ],
     },
