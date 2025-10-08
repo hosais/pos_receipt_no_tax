@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-inherit="OrderReprintReceipt" t-inherit-mode="extension" owl="1">
+        <!-- Remove the TOTAL TAX line -->
+        <xpath expr="//div[contains(., 'Total Taxes')]" position="replace"/>
+    </t>
+</templates>
